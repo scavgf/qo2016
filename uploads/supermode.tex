@@ -1,0 +1,93 @@
+%\usepackage{CJK}
+
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath, amssymb}
+\usepackage[top = 1.54cm, left = 2.54cm, bottom=1.54cm]{geometry}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, citecolor=blue, urlcolor=blue]{hyperref}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=Latex.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{LastRevised=Thursday, August 13, 2015 09:30:21}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+
+
+\begin{document}
+
+\title{Supermode in coupled opto.\footnotesize{Phys.Rev.A.90.053814}}
+\author{C.-J. Yang}
+\maketitle
+
+%\begin{CJK*}{GBK}{song}
+
+\section{Introduction}
+
+The initial Hamiltonian reads%
+\begin{eqnarray*}
+\hat{H} &=&\hbar \omega _{c}\hat{a}_{L}^{\dag }\hat{a}_{L}+\hbar \omega _{c}%
+\hat{a}_{R}^{\dag }\hat{a}_{R}+\hbar g(\hat{a}_{L}^{\dag }\hat{a}_{R}+\hat{a}%
+_{R}^{\dag }\hat{a}_{L}) \\
+&&+\hbar \omega _{m}\hat{b}^{\dag }\hat{b}-\hbar \chi (\hat{a}_{L}^{\dag }%
+\hat{a}_{L}-\hat{a}_{R}^{\dag }\hat{a}_{R})(\hat{b}^{\dag }+\hat{b}) \\
+&&+i\hbar \lbrack \Omega e^{-i\omega _{d}t}\hat{a}_{L}^{\dag }-\Omega
+e^{i\omega _{d}t}\hat{a}_{L}]
+\end{eqnarray*}%
+Expressing in the supermode operators%
+\begin{equation*}
+\hat{a}_{1}=(\hat{a}_{L}+\hat{a}_{R})/\sqrt{2},\hat{a}_{2}=(\hat{a}_{L}-\hat{%
+a}_{R})/\sqrt{2}
+\end{equation*}
+
+we have%
+\begin{equation*}
+\hat{a}_{L}=(\hat{a}_{1}+\hat{a}_{2})/\sqrt{2},\hat{a}_{R}=(\hat{a}_{1}-\hat{%
+a}_{2})/\sqrt{2}
+\end{equation*}%
+and%
+\begin{eqnarray*}
+\hat{H} &=&\frac{1}{2}\hbar \omega _{c}(\hat{a}_{1}^{\dag }+\hat{a}%
+_{2}^{\dag })(\hat{a}_{1}+\hat{a}_{2})+\frac{1}{2}\hbar \omega _{c}(\hat{a}%
+_{1}^{\dag }-\hat{a}_{2}^{\dag })(\hat{a}_{1}-\hat{a}_{2}) \\
+&&+\frac{1}{2}\hbar g[(\hat{a}_{1}^{\dag }+\hat{a}_{2}^{\dag })(\hat{a}_{1}-%
+\hat{a}_{2})+(\hat{a}_{1}^{\dag }-\hat{a}_{2}^{\dag })(\hat{a}_{1}+\hat{a}%
+_{2})] \\
+&&+\hbar \omega _{m}\hat{b}^{\dag }\hat{b}-\hbar \chi \lbrack (\hat{a}%
+_{1}^{\dag }+\hat{a}_{2}^{\dag })(\hat{a}_{1}+\hat{a}_{2})-(\hat{a}%
+_{1}^{\dag }-\hat{a}_{2}^{\dag })(\hat{a}_{1}-\hat{a}_{2})](\hat{b}^{\dag }+%
+\hat{b}) \\
+&&+\frac{i\hbar }{\sqrt{2}}[\Omega e^{-i\omega _{d}t}(\hat{a}_{1}^{\dag }+%
+\hat{a}_{2}^{\dag })-\Omega e^{i\omega _{d}t}(\hat{a}_{1}+\hat{a}_{2})] \\
+&=&
+\end{eqnarray*}%
+\begin{eqnarray*}
+\hat{H} &=&\hbar (\omega _{c}+g)\hat{a}_{1}^{\dag }\hat{a}_{1}+\hbar (\omega
+_{c}-g)\hat{a}_{2}^{\dag }\hat{a}_{2} \\
+&&+\hbar \omega _{m}\hat{b}^{\dag }\hat{b}-\hbar \chi (\hat{a}_{1}^{\dag }%
+\hat{a}_{2}+\hat{a}_{2}^{\dag }\hat{a}_{1})(\hat{b}^{\dag }+\hat{b}) \\
+&&+\frac{i\hbar }{\sqrt{2}}[\Omega e^{-i\omega _{d}t}(\hat{a}_{1}^{\dag }+%
+\hat{a}_{2}^{\dag })-\Omega e^{i\omega _{d}t}(\hat{a}_{1}+\hat{a}_{2})]
+\end{eqnarray*}%
+\begin{eqnarray*}
+\hat{H} &=&\hbar \omega _{m}\hat{b}^{\dag }\hat{b}-\hbar \chi (\hat{a}%
+_{1}^{\dag }\hat{a}_{2}+\hat{a}_{2}^{\dag }\hat{a}_{1})(\hat{b}^{\dag }+\hat{%
+b}) \\
+&&+\hbar (g-\Delta )\hat{a}_{1}^{\dag }\hat{a}_{1}-\hbar (g+\Delta )\hat{a}%
+_{2}^{\dag }\hat{a}_{2} \\
+&&+\frac{i\hbar }{\sqrt{2}}[\Omega (\hat{a}_{1}^{\dag }+\hat{a}_{2}^{\dag
+})-\Omega (\hat{a}_{1}+\hat{a}_{2})] \\
+&\simeq &\hbar \omega _{m}\hat{b}^{\dag }\hat{b}-\hbar \chi (\hat{a}%
+_{1}^{\dag }\hat{a}_{2}\hat{b}+\hat{a}_{2}^{\dag }\hat{a}_{1}\hat{b}^{\dag })
+\\
+&&+\hbar (g-\Delta )\hat{a}_{1}^{\dag }\hat{a}_{1}-\hbar (g+\Delta )\hat{a}%
+_{2}^{\dag }\hat{a}_{2} \\
+&&+\frac{i\hbar }{\sqrt{2}}[\Omega (\hat{a}_{1}^{\dag }+\hat{a}_{2}^{\dag
+})-\Omega (\hat{a}_{1}+\hat{a}_{2})]
+\end{eqnarray*}%
+%\end{CJK*}
+
+\end{document}
