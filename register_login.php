@@ -24,7 +24,7 @@ Released   : 20120210
 <meta name="keywords" content="" />
 <title>第十七届全国量子光学学术会议</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="stylesheets/meetingfee-style.css" />
+<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
 <div id="wrapper">
@@ -33,8 +33,7 @@ Released   : 20120210
               
 		<div id="content">
 				<h4>会议网站注册</h4>
-			<div class="box">
-				<form action="" method="post">
+				<form action="" method="post" class="regist">
                                  <table cellspacing="15">
                                   <tr> 
 				    <td>
@@ -83,7 +82,6 @@ Released   : 20120210
 				    } 
 				}?>
                                 
-			</div>
 		</div>
                 <?php include('./includes/nav.inc.php');?>
 		<br class="clearfix" />
