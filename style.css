@@ -111,6 +111,16 @@ ul h4 {
 	padding: 0;
 }
 
+#content .errorinfo{
+        padding: 0px 0px 0px 20px;
+}
+div.boxregist {
+	float: left;
+	position: absolute;
+        top: 80px;
+        left:255px;
+}
+
 
 #content-box1 {
 	width: 320px;
@@ -122,12 +132,6 @@ ul h4 {
 	width: 320px;
 }
 
-#content form.regist {
-	float: left;
-        position: absolute;
-        left:255px;
-        top: 80px;
-}
 
 #footer {
 	margin: 40px 0 120px 0;

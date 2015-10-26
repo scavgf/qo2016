@@ -33,7 +33,8 @@ Released   : 20120210
               
 		<div id="content">
 				<h4>会议网站注册</h4>
-				<form action="" method="post" class="regist">
+			<div class="boxregist">
+				<form action="" method="post">
                                  <table cellspacing="15">
                                   <tr> 
 				    <td>
@@ -70,17 +71,18 @@ Released   : 20120210
 				if (isset($result) || isset($errors)) {
                                     $redirect = 'login.php';
 				    if (!empty($errors)) {
-				    echo '<ul>';
-                                        echo '<br> <font color="red"> 注册失败, 请重新注册</font> </br>';
+                                        echo '<p class="errorinfo"> <font color="red"> ! 注册失败, 请重新注册</font> </p>';
+				    echo '<ul class="errorinfo">';
 				        foreach ($errors as $item) {
 				            echo "<li><font clor='red'> *$item </font></li>";
-                                  echo '</ul>';
 				        }
+                                     echo '</ul>';
 				    } else {
 				       /*<li> *<?php echo $result; ?> &nbsp; <button type=button onclick="location.href='./login.php'">请登陆</li> */
                                     header("Location: $redirect?register=yes");
 				    } 
 				}?>
+			</div>
                                 
 		</div>
                 <?php include('./includes/nav.inc.php');?>
