@@ -21,11 +21,6 @@ Released   : 20120210
 <link rel="stylesheet" type="text/css" href="stylesheets/meetingfee-style.css" />
 </head>
 <body>
-<script>
-function errorReturn(){
-location.href='./register.php';
-}
-</script>
 <div id="wrapper">
         <?php include('./includes/head.inc.php'); ?>
   <?php 
@@ -45,8 +40,12 @@ location.href='./register.php';
                 <?php if (!$testy &&!isset($errord)){
                     echo "<p><strong>恭喜您，注册成功</strong> </p>";
                    } else { ?>
-                    <p><font color="red"> !注册失败，请重新注册 </font>&nbsp;&nbsp;&nbsp; <button type="button" onclick= "errorReturn()"  >重新注册</button></p>
-                  <?php 
+
+              <form method="post" action="./register.php">
+                   <font color="red"> !注册失败，请重新注册 </font> &nbsp; &nbsp; <input type="submit" name="update" value="重新注册" id="update">
+                    <input name="id" type="hidden" value="<?= $_GET['user_id'];?>">
+              </form>
+                 <?php 
 	          if (isset($errord)) {
 	              echo '<ul>';
 	              foreach ($errord as $message) {

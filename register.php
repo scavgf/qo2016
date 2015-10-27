@@ -101,8 +101,8 @@ Released   : 20120210
 			   <input type="radio" v name="lecture" value="lecture-no"   onclick="clickhide()"/>无 &nbsp;&nbsp;
 
                          </p>
-			<p id="p1">
-                           <a href="./include/documents/model.docs" >1. 模版下载(点击下载)</a>
+			<p id="p1" style="display: none">
+                           <a href="./documents/abstract.docx" >1. 模版下载(点击下载)</a>
                            &nbsp;&nbsp;&nbsp;
                            <label for="uploadFile">2. 上传文件:  </label> 
                            <input type="file" name="uploadFile"  class="formbox" size='20' >
@@ -111,19 +111,19 @@ Released   : 20120210
                            <p><strong><font > 酒店信息：</font></strong> </p>
                         </p>
                            <strong><font color="font">* </font> 飞天大酒店</strong> </br>
-			   <input type="radio" value="feitian1" name="hotel" /> 单人间 (500间/晚) &nbsp;
-		           <input type="radio" value="feitian2" name="hotel" /> 标准间<font color="red">合住</font>(450间/晚)&nbsp;
-		           <input type="radio" value="feitian3" name="hotel" /> 标准间<font color="red">单住</font>(450间/晚)&nbsp;
+			   <input type="radio" value="feitian1" name="hotel" /> 单人间 (500元 间/晚) &nbsp;
+		           <input type="radio" value="feitian2" name="hotel" /> 标准间<font color="red">合住</font>(450元 间/晚)&nbsp;
+		           <input type="radio" value="feitian3" name="hotel" /> 标准间<font color="red">单住</font>(450元 间/晚)&nbsp;
                            </br>
                            <strong><font color="font">* </font> 萃英大酒店</strong> </br>
-			   <input type="radio" value="cuiying1" name="hotel" /> 单人间 (280间/晚) &nbsp;
-		           <input type="radio" value="cuiying2" name="hotel" /> 标准间<font color="red">合住</font>(280间/晚)&nbsp;
-		           <input type="radio" value="cuiying3" name="hotel" /> 标准间<font color="red">单住</font>(280间/晚)&nbsp;
+			   <input type="radio" value="cuiying1" name="hotel" /> 单人间 (280元 间/晚) &nbsp;
+		           <input type="radio" value="cuiying2" name="hotel" /> 标准间<font color="red">合住</font>(280元 间/晚)&nbsp;
+		           <input type="radio" value="cuiying3" name="hotel" /> 标准间<font color="red">单住</font>(280元 间/晚)&nbsp;
                            </br>
                            <strong><font color="font">* </font> 东方大酒店</strong> </br>
-			   <input type="radio" value="dongfang1" name="hotel" /> 单人间 (280间/晚) &nbsp;
-		           <input type="radio" value="dongfang2" name="hotel" /> 标准间<font color="red">合住</font>(280间/晚)&nbsp;
-		           <input type="radio" value="dongfang3" name="hotel" /> 标准间<font color="red">单住</font>(280间/晚)&nbsp;
+			   <input type="radio" value="dongfang1" name="hotel" /> 单人间 (240元 间/晚) &nbsp;
+		           <input type="radio" value="dongfang2" name="hotel" /> 标准间<font color="red">合住</font>(220元 间/晚)&nbsp;
+		           <input type="radio" value="dongfang3" name="hotel" /> 标准间<font color="red">单住</font>(220元 间/晚)&nbsp;
                         </p>
 			  <p>
                            <label for="arrivalTime"> <font color="font">* </font> 入住时间: </label> 

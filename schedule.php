@@ -32,12 +32,6 @@ Released   : 20120210
                                     <li class="first"> 报到时间：2016年8月5日 </li>
  				</ul>
 
-				<h4>会议资料下载 </h4>
-                            <ul class="img">
-                           	<li class="first"> <a href="documents/first-notification.docx"> 第一轮通知</a> </li>
-                           	<li class="first"> <a href="documents/second-notification.docx"> 第二轮通知</a> </li>
-                           	<li class="first"> <a href="documents/***.pdf"> 会议手册</a> </li>
-                            </ul>
 		</div>
         <?php include('./includes/nav.inc.php');?>
 		<br class="clearfix" />

@@ -12,7 +12,7 @@ elseif (in_array($key, $expected)) {
 	}
      }
     switch ($gender){
-      case "femal":
+      case "female":
         $gender="女";
         break;
       case "male":
@@ -140,11 +140,11 @@ if (isset($_FILES['uploadBill'])) {
                     <th colspan="2"> 注册信息</th>
                 </tr>
                 <tr>
-                   <td>姓名: </td> 
+                   <td><font color="red"> *</font> 姓名: </td> 
                    <td> 
                        <?php if ($missing && in_array('name', $missing)){
                               $testy=true;
-                              echo '请输入姓名';}
+                              echo '<font color="red"> 请输入姓名 </font>';}
                               else {
                                echo $name; 
                               }
@@ -152,11 +152,11 @@ if (isset($_FILES['uploadBill'])) {
                   </td>
                 </tr>
                 <tr>
-                   <td>性别: </td> 
+                   <td><font color="red"> *</font> 性别: </td> 
                    <td> 
                        <?php if ($gender==""){
                               $testy=true;
-                              echo '请选择性别';}
+                              echo '<font color="red"> 请选择性别 </font>';}
                               else {
                               echo $gender; 
                               }
@@ -164,11 +164,11 @@ if (isset($_FILES['uploadBill'])) {
                   </td>
                 </tr>
                 <tr>
-                   <td>单位: </td> 
+                   <td><font color="red"> *</font> 单位: </td> 
                    <td> 
                        <?php if ($missing && in_array('unit', $missing)){
                               $testy=true;
-                              echo '请输入单位信息';}
+                              echo '<font color="red"> 请输入单位信息 </font>';}
                               else {
                               echo $unit; 
                               }
@@ -176,11 +176,11 @@ if (isset($_FILES['uploadBill'])) {
                   </td>
                 </tr>
                 <tr>
-                   <td>职称: </td> 
+                   <td><font color="red"> *</font> 职称: </td> 
                    <td> 
                        <?php if ($title==""){
                               $testy=true;
-                              echo '请选择职称';}
+                              echo '<font color="red"> 请选择职称 </font>';}
                               else {
                               echo $title; 
                               }
@@ -188,11 +188,11 @@ if (isset($_FILES['uploadBill'])) {
                   </td>
                 </tr>
                 <tr>
-                   <td>电话： </td> 
+                   <td><font color="red"> *</font> 电话： </td> 
                    <td> 
                        <?php if ($missing && in_array('telephone', $missing)){
                               $testy=true;
-                              echo '请输入电话号码';}
+                              echo '<font color="red"> 请输入电话号码 </font>';}
                               else {
                               echo $telephone; 
                               }
@@ -200,22 +200,22 @@ if (isset($_FILES['uploadBill'])) {
                   </td>
                 </tr>
                 <tr>
-                   <td>邮箱： </td> 
+                   <td><font color="red"> *</font> 邮箱： </td> 
                    <td> 
                        <?php if ($missing && in_array('email', $missing)){
                               $testy=true;
-                              echo '请输入邮箱';}
+                              echo '<font color="red"> 请输入邮箱 </font>';}
                               else {
                               echo $email; 
                               }
                         ?>
                   </td>
                 </tr>
-                   <td>报告信息： </td> 
+                   <td><font color="red"> *</font> 报告信息： </td> 
                    <td> 
                        <?php if ($lecture==""){
                               $testy=true;
-                              echo '请选择报告信息';}
+                              echo '<font color="red"> 请选择报告信息 </font>';}
                               else {
                               echo $lecture; 
                               }
@@ -234,11 +234,11 @@ if (isset($_FILES['uploadBill'])) {
                   </td>
                 </tr>
                 <tr>
-                   <td>酒店信息： </td> 
+                   <td><font color="red"> *</font> 酒店信息： </td> 
                    <td> 
                        <?php if ($hotel==""){
                               $testy=true;
-                              echo '请选择酒店信息';}
+                              echo '<font color="red"> 请选择酒店信息 </font>';}
                               else {
                               echo $hotel; 
                               }
@@ -246,11 +246,11 @@ if (isset($_FILES['uploadBill'])) {
                   </td>
                 </tr>
                 <tr>
-                   <td>到达时间： </td> 
+                   <td><font color="red"> *</font> 到达时间： </td> 
                    <td> 
                        <?php if ($missing && in_array('arrivalTime', $missing)){
                               $testy=true;
-                              echo '请选择到达时间';}
+                              echo '<font color="red"> 请选择到达时间</font>';}
                               else {
                               echo $arrivalTime; 
                               }
@@ -269,11 +269,11 @@ if (isset($_FILES['uploadBill'])) {
                   </td>
                 </tr>
                 <tr>
-                   <td>注册费： </td> 
+                   <td><font color="red"> *</font> 注册费： </td> 
                    <td> 
                        <?php if ($meetingfee==""){
                               $testy=true;
-                              echo '请输入缴费信息';}
+                              echo '<font color="red">请输入缴费信息</font>';}
                               else {
                               echo $meetingfee;
                               }
@@ -281,7 +281,7 @@ if (isset($_FILES['uploadBill'])) {
                   </td>
                  </tr>
                  <tr>
-                   <td>票据信息： </td> 
+                   <td> 票据信息： </td> 
                    <td> 
                        <?php if ($uploadBill1==""){
                               echo '无票据信息';}
@@ -348,7 +348,7 @@ if (isset($_FILES['uploadBill'])) {
         $stmt->close();
    }
     } else {
-      $errord[]="该邮箱已被注册"; }
+      $errord[]="该邮箱已被注册, 如许修改信息，请访问 “个人信息”"; }
 }
 
 //tesitify the email
