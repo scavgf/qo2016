@@ -20,6 +20,7 @@ Released   : 20120210
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="stylesheets/meetingfee-style.css" />
 <link rel="stylesheet" href="./includes/calendar/jquery-ui-themes-1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="head.css" />
 <script src="./includes/calendar/jquery-1.10.2.js"></script>
 <script src="./includes/calendar/jquery-ui.js"></script>
 <script>
@@ -51,6 +52,12 @@ Released   : 20120210
   }
   function clickradioHide(){
     $("#bill").hide();
+  }
+  function clicktimeShow(){
+    $("#time").show();
+  }
+  function clicktimeHide(){
+    $("#time").hide();
   }
 </script>
 </head>
@@ -98,7 +105,7 @@ Released   : 20120210
 
 			   <input type="radio"  name="lecture" value="poster"    onclick="clickshow()" />张贴海报 &nbsp;&nbsp;
 
-			   <input type="radio" v name="lecture" value="lecture-no"   onclick="clickhide()"/>无 &nbsp;&nbsp;
+			   <input type="radio"  name="lecture" value="lecture-no"   onclick="clickhide()"/>无 &nbsp;&nbsp;
 
                          </p>
 			<p id="p1" style="display: none">
@@ -108,30 +115,34 @@ Released   : 20120210
                            <input type="file" name="uploadFile"  class="formbox" size='20' >
                            </br>
                            <font color="red"> *请报告人和海报张贴者按照模版格式填写报告以及海报信息. </font>
-                           <p><strong><font > 酒店信息：</font></strong> </p>
+                           <p><strong><font color="red">*</font> 酒店信息：</strong> </p>
                         </p>
-                           <strong><font color="font">* </font> 飞天大酒店</strong> </br>
-			   <input type="radio" value="feitian1" name="hotel" /> 单人间 (500元 间/晚) &nbsp;
-		           <input type="radio" value="feitian2" name="hotel" /> 标准间<font color="red">合住</font>(450元 间/晚)&nbsp;
-		           <input type="radio" value="feitian3" name="hotel" /> 标准间<font color="red">单住</font>(450元 间/晚)&nbsp;
+                           <strong>飞天大酒店</strong> </br>
+			   <input type="radio" value="feitian1" name="hotel" onclick="clicktimeShow()" /> 单人间 (500元/间) &nbsp;
+		           <input type="radio" value="feitian2" name="hotel" onclick="clicktimeShow()"/> 标准间<font color="red">合住</font>(450元/间)&nbsp;
+		           <input type="radio" value="feitian3" name="hotel" onclick="clicktimeShow()"/> 标准间<font color="red">单住</font>(450元/间)&nbsp;
                            </br>
-                           <strong><font color="font">* </font> 萃英大酒店</strong> </br>
-			   <input type="radio" value="cuiying1" name="hotel" /> 单人间 (280元 间/晚) &nbsp;
-		           <input type="radio" value="cuiying2" name="hotel" /> 标准间<font color="red">合住</font>(280元 间/晚)&nbsp;
-		           <input type="radio" value="cuiying3" name="hotel" /> 标准间<font color="red">单住</font>(280元 间/晚)&nbsp;
+                           <strong> 萃英大酒店</strong> </br>
+			   <input type="radio" value="cuiying1" name="hotel" onclick="clicktimeShow()"/> 单人间 (280元/间) &nbsp;
+		           <input type="radio" value="cuiying2" name="hotel" onclick="clicktimeShow()"/> 标准间<font color="red">合住</font>(280元/间)&nbsp;
+		           <input type="radio" value="cuiying3" name="hotel" onclick="clicktimeShow()"/> 标准间<font color="red">单住</font>(280元/间)&nbsp;
                            </br>
-                           <strong><font color="font">* </font> 东方大酒店</strong> </br>
-			   <input type="radio" value="dongfang1" name="hotel" /> 单人间 (240元 间/晚) &nbsp;
-		           <input type="radio" value="dongfang2" name="hotel" /> 标准间<font color="red">合住</font>(220元 间/晚)&nbsp;
-		           <input type="radio" value="dongfang3" name="hotel" /> 标准间<font color="red">单住</font>(220元 间/晚)&nbsp;
-                        </p>
-			  <p>
+                           <strong> 东方大酒店</strong> </br>
+			   <input type="radio" value="dongfang1" name="hotel" onclick="clicktimeShow()"/> 单人间 (240元/间) &nbsp;
+		           <input type="radio" value="dongfang2" name="hotel" onclick="clicktimeShow()"/> 标准间<font color="red">合住</font>(220元/间)&nbsp;
+		           <input type="radio" value="dongfang3" name="hotel" /> 标准间<font color="red">单住</font>(220元/间)&nbsp;
+                           </br>
+                           </p>
+                           <p id='time' style='display: none;'>
                            <label for="arrivalTime"> <font color="font">* </font> 入住时间: </label> 
                            <input name="arrivalTime" id="datepicker1" type="text" class="formbox" size='10'>
                            &nbsp;&nbsp;&nbsp;
                            <label for="departureTime">  离开时间: </label> 
-                           <input name="departureTime" id="datepicker2" type="text" class="formbox" size='10' >
-                          </p>
+                           <input name="departureTime" id="datepicker2" type="text" class="formbox" size='10' > </br>
+                           </p>
+                           <p>
+                           <input type="radio" value="selfcare" name="hotel" onclick="clicktimeHide()"/> <strong> 住宿自理 </strong>
+                           </p>
                           
                           <p> <strong>注册费：</strong> </br>
                            <p><label for="meetingfee"><font color="font">* </font> 注册费:  &nbsp;

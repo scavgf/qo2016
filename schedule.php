@@ -19,6 +19,7 @@ Released   : 20120210
 <title>第十七届全国量子光学学术会议</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="stylesheets/schedule-style.css" />
+<link rel="stylesheet" type="text/css" href="head.css" />
 </head>
 <body>
 <div id="wrapper">

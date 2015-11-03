@@ -19,6 +19,7 @@ Released   : 20120210
 <title>第十七届全国量子光学学术会议</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="stylesheets/meetingfee-style.css" />
+<link rel="stylesheet" type="text/css" href="head.css" />
 </head>
 <body>
 <div id="wrapper">
@@ -37,7 +38,7 @@ Released   : 20120210
 		<div id="content">
                 <?php require_once('./includes/checkinfo.inc.php');?>
                 </br>
-                <?php if (!$testy &&!isset($errord)){
+                <?php if (!$testy && !isset($errord)){
                     echo "<p><strong>恭喜您，注册成功</strong> </p>";
                    } else { ?>
 
@@ -55,7 +56,8 @@ Released   : 20120210
 	          }
                    ?>
                   <?php } ?>  
-	          <?php
+
+<!--	          <?php
 	          if (isset($resultFile)) {
                      echo "<p>上传文件</p>";
 	              echo '<ul>';
@@ -76,7 +78,7 @@ Released   : 20120210
 	              echo '</ul>';
 	          }
 	          ?>
-
+-->
 		</div>
 
                 <?php include('./includes/nav.inc.php');?>

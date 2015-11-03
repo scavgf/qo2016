@@ -71,6 +71,8 @@ elseif (in_array($key, $expected)) {
         break;
       case "dongfang3":
         $hotel="东方标间单住";
+      case "selfcare":
+        $hotel="住宿自理";
         break;
       default:
         $hotel="";
@@ -238,36 +240,45 @@ if (isset($_FILES['uploadBill'])) {
                    <td> 
                        <?php if ($hotel==""){
                               $testy=true;
-                              echo '<font color="red"> 请选择酒店信息 </font>';}
-                              else {
+                              echo '<font color="red"> 请选择酒店信息 </font>';
+                              echo '</td>';
+                              echo '</tr>';
+                              }
+                              elseif ($hotel=="住宿自理"){
                               echo $hotel; 
+                              $arrivalTime="无";
+                              $departureTime="无";
+                              echo '</td>';
+                              echo '</tr>';
                               }
-                        ?>
-                  </td>
-                </tr>
-                <tr>
-                   <td><font color="red"> *</font> 到达时间： </td> 
-                   <td> 
-                       <?php if ($missing && in_array('arrivalTime', $missing)){
-                              $testy=true;
-                              echo '<font color="red"> 请选择到达时间</font>';}
-                              else {
-                              echo $arrivalTime; 
-                              }
-                        ?>
-                  </td>
-                </tr>
-                <tr>
-                   <td>离开时间： </td> 
-                   <td> 
-                       <?php if ($missing && in_array('departureTime', $missing)){
-                              echo '无离开时间';}
-                              else {
-                              echo $departureTime; 
-                              }
-                        ?>
-                  </td>
-                </tr>
+                              else{ 
+                              echo $hotel;
+                              echo '</td>';
+                              echo '</tr>'; ?>
+                              <tr>
+                                 <td><font color="red"> *</font> 入住时间： </td> 
+                                 <td> 
+                                     <?php if ($missing && in_array('arrivalTime', $missing)){
+                                            $testy=true;
+                                            echo '<font color="red"> 请选择到达时间</font>';}
+                                            else {
+                                            echo $arrivalTime; 
+                                            }
+                                      ?>
+                                </td>
+                              </tr>
+                              <tr>
+                                 <td>离开时间： </td> 
+                                 <td> 
+                                     <?php if ($missing && in_array('departureTime', $missing)){
+                                            echo '无离开时间';}
+                                            else {
+                                            echo $departureTime; 
+                                            }
+                                      ?>
+                                </td>
+                              </tr>
+                            <?php } ?>
                 <tr>
                    <td><font color="red"> *</font> 注册费： </td> 
                    <td> 
@@ -304,7 +315,7 @@ if (isset($_FILES['uploadBill'])) {
                   </td>
                 </tr>
                 </table>
-
+<?php unset($errord);?>
 <?php if (!$testy) {
         $conn=dbConnect('write');
         $conn->query("set names utf8");

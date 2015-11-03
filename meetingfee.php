@@ -19,6 +19,7 @@ Released   : 20120210
 <title>第十七届全国量子光学学术会议</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="stylesheets/meetingfee-style.css" />
+<link rel="stylesheet" type="text/css" href="head.css" />
 </head>
 <body>
 <div id="wrapper">
@@ -40,13 +41,16 @@ Released   : 20120210
 					参会学生凭学生证：600元/人
 				</p>
                                </ul>
-                               <h4>  &nbsp; 汇款账户信息 </h4>
+
+                               <div class="background">
+                               <h4> 汇款账户信息 </h4>
  		        	<p class="T2"> 户名（收款人）：兰州大学 </br>
                                  账号：2703002409026413243 </br>
 				 开户银行：甘肃省兰州市工商银行天水路支行 </br>
                                  联行号：102821000249 </br> 
 				 汇款请注明：量子光学会议会务费；单位；姓名 
                                 </p>
+                               </div>
 		</div>
                 <?php include('./includes/nav.inc.php');?>
 		<br class="clearfix" />
