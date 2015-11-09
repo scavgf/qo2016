@@ -211,7 +211,7 @@ ul h4 {
 #menu li a:hover{
 float:left;
 width:100px;
-background-color: yellow;
+background-color: #373737;
 }
 
 
@@ -225,22 +225,24 @@ color: #FFFFFF;
 }
  
 #logout {
-width:50px;
 position: absolute;
-right:30px;
+right:50px;
 color: #FFFFFF;
-font-size:1.25em;
+font-size:1.05em;
 letter-spacing: -1px;
 }
 
-#logout:hover{
-float:left;
-width:100px;
-background-color:green;
-}
-#logoutPic{
+#logout a{
 position: absolute;
-right:70px;
+top: 0px;
+left:50px;
+width:50px;
+color: #FFFFFF;
+font-size:1.05em;
+letter-spacing: -1px;
+}
+
+#logout img{
 height: 45px;
 padding: 7px 0 0 0;
 }

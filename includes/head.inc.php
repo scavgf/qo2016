@@ -30,7 +30,7 @@ if (r==true)
 		echo '<li><a href="register.php"><center>会议注册</center></a></li>';
 		echo '<li><a href="personal.info.php"><center>个人信息</center></a></li>';
 		echo '<li class="information"> 欢迎回来, '. $_SESSION['username'].' </li>';
-		echo ' <li id="logout" onclick="show_confirm()"> <img id="logoutPic" src="/images/logout-w.png" /> <center>登出</center> </li>';
+		echo ' <li id="logout" onclick="show_confirm()"> <img src="/images/logout-w.png" /> <a> 登出</a> </li>';
                 }?>
 		</ul>
 		<br class="clearfix" />
