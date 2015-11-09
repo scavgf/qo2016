@@ -8,18 +8,6 @@ if (r==true)
   }
 }
 </script>
-<style type="text/css">
-#logout {
-        float:right;
-        position: absolute;
-        right:10px;
-	text-decoration: none;
-	color: #FFFFFF;
-	font-size: 1.25em;
-	letter-spacing: -1px;}
-#menu ul li.information {padding: 0 0px 0 0px; color: #FFFFFF;}
-#logoutPic {height: 45px;position: absolute; right: 120px; padding: 7px 0 0 0;}
-</style>
 
 <div id="header">
 <!--	<div id="logo">
@@ -42,7 +30,7 @@ if (r==true)
 		echo '<li><a href="register.php"><center>会议注册</center></a></li>';
 		echo '<li><a href="personal.info.php"><center>个人信息</center></a></li>';
 		echo '<li class="information"> 欢迎回来, '. $_SESSION['username'].' </li>';
-		echo ' <li  onclick="show_confirm()"> <img id="logoutPic" height="40" src="/images/logout-w.png" /> <a id="logout"> 登出 </a> </li>';
+		echo ' <li id="logout" onclick="show_confirm()"> <img id="logoutPic" src="/images/logout-w.png" /> <center>登出</center> </li>';
                 }?>
 		</ul>
 		<br class="clearfix" />
