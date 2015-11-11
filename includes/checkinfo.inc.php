@@ -96,7 +96,7 @@ use PhpSolutions\File\Upload;
 $max = 60000*1024; // 60 MB
 if (isset($_FILES['uploadFile'])) {
     // define the path to the upload folder
-    $destinationFile = 'uploads/';
+    $destinationFile = 'uploads/file/';
     try {
         $loaderFile = new Upload($destinationFile, 'uploadFile');
         $loaderFile->setMaxSize($max);
@@ -117,7 +117,7 @@ if (isset($_FILES['uploadFile'])) {
 
 if (isset($_FILES['uploadBill'])) {
     // define the path to the upload folder
-    $destinationBill = 'uploads/';
+    $destinationBill = 'uploads/bill/';
     try {
         $loaderBill = new Upload($destinationBill, 'uploadBill');
         $loaderBill->setMaxSize($max);

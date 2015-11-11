@@ -132,13 +132,11 @@ ul h4 {
 }
 
 #header {
-	height: 250px;
-	width: 888px;
+	height: 340px;
+	width: 980px;
 	position: relative;
 	background-image: url(/images/logoG.png);
-	padding: 45px;
         background-size: 100% 100%;
-	border: solid 1px #7E7E7E;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	overflow: hidden;
@@ -183,11 +181,10 @@ ul h4 {
 	padding: 0 45px 0 45px;
 	position: relative;
 	background: #8C8B8D;
-	margin: 0 0 0 0;
 	height: 60px;
 	line-height: 60px;
 	width: 890px;
-	border-top: solid 1px #8C8B8D;
+	border-top: solid 1px #373737;
 }
 
 
@@ -220,7 +217,7 @@ background-color: #373737;
 position: relative;
 left:50px;
 float:left;
-width:200px;
+width:350px;
 color: #FFFFFF;
 }
  
