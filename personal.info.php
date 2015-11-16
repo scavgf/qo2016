@@ -94,7 +94,7 @@ Released   : 20120210
                  		  echo '<td>酒店信息: </td>';
                  		  echo '<td>'.$row['hotel'].' </td>';
                  		  echo '</tr>';
-                 		  echo '<tr>';
+                 		 /* echo '<tr>';
                  		  echo '<td>会议费信息: </td>';
                  		  echo '<td>'.$row['meetingfee'].' </td>';
                  		  echo '</tr>';
@@ -103,7 +103,7 @@ Released   : 20120210
                  		  if($row['uploadBill']!=""){
                  		  echo '<td>'. '<a href='. $row['uploadBill'].'> 下载 </a>' .'</td>';} else{ 
                  		  echo '<td> 无 </td>';}
-                 		  echo '</tr>';
+                 		  echo '</tr>'; */
                  		  echo '</table>';
                  		  $remarkInfo=true;
                  		  }                                   

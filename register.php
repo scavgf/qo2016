@@ -144,7 +144,7 @@ Released   : 20120210
                            <input type="radio" value="selfcare" name="hotel" onclick="clicktimeHide()"/> <strong> 住宿自理 </strong>
                            </p>
                           
-                          <p> <strong>注册费：</strong> </br>
+<!--                          <p> <strong>注册费：</strong> </br>
                            <p><label for="meetingfee"><font color="font">* </font> 注册费:  &nbsp;
                            </label>
 			   <input  type="radio" value="cash" name="meetingfee" onclick="clickradioHide()"/> 现场缴纳 &nbsp;&nbsp;
@@ -154,7 +154,7 @@ Released   : 20120210
                            <label for="uploadBill">上传票据:  </label> 
                            <input type="file" name="uploadBill"  class="formbox" size='20' >
                            </p>
-                          </p>
+                          </p> -->
                         <p> <label for= "remark"> <strong> 备注：</strong> </label> </br>
                            <textarea name="remark" id="remark" rows="7" cols="60"> </textarea>
                         </p>

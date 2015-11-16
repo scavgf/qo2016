@@ -27,14 +27,14 @@ Released   : 20120210
 	<div id="page">
 		<div id="content">
 				<h4>会议注册费</h4>
-                             <ul> 
-                                <li class="circle"> <strong>5月20日之后汇款或现场缴纳: </strong> </li>
+ <!--                             <ul> 
+                               <li class="circle"> <strong>5月20日之后汇款或现场缴纳: </strong> </li> 1-->
 				<p class="T2">
 					参会教师：1000元/人
 					<br/>
 					参会学生凭学生证：700元/人
 				</p>
-                                <li class="circle"> <strong>5月20日之前汇款: </strong> </li>
+                            <!--    <li class="circle"> <strong>5月20日之前汇款: </strong> </li>
 				<p class="T2">
 					参会教师：900元/人
 					<br/>
@@ -50,7 +50,7 @@ Released   : 20120210
                                  联行号：102821000249 </br> 
 				 汇款请注明：量子光学会议会务费；单位；姓名 
                                 </p>
-                               </div>
+                               </div> -->
 		</div>
                 <?php include('./includes/nav.inc.php');?>
 		<br class="clearfix" />

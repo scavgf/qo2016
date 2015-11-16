@@ -29,8 +29,8 @@ Released   : 20120210
            $errors=array();
     	   $missing=array();
       	   if (isset($_POST['send'])){
-           $expected=array('name', 'gender', 'unit', 'title', 'telephone', 'email', 'arrivalTime', 'departureTime', 'lecture', 'hotel', 'uploadFile','meetingfee', 'uploadBill','remark');
-           $required=array('name', 'gender', 'unit', 'title', 'telephone', 'email', 'arrivalTime',  'lecture', 'hotel', 'meetingfee');
+           $expected=array('name', 'gender', 'unit', 'title', 'telephone', 'email', 'arrivalTime', 'departureTime', 'lecture', 'hotel', 'uploadFile', 'remark');
+           $required=array('name', 'gender', 'unit', 'title', 'telephone', 'email', 'arrivalTime',  'lecture', 'hotel');
            }
       	   ?> 
             

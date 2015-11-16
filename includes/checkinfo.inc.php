@@ -78,7 +78,7 @@ elseif (in_array($key, $expected)) {
         $hotel="";
     } 
 
-    switch ($meetingfee){
+/*    switch ($meetingfee){
       case "cash":
         $meetingfee="现场缴纳";
         break;
@@ -88,7 +88,7 @@ elseif (in_array($key, $expected)) {
       default:
         $meetingfee="";
     } 
-
+*/
 
 // set the maximum upload size in bytes
 use PhpSolutions\File\Upload;
@@ -115,7 +115,7 @@ if (isset($_FILES['uploadFile'])) {
         }
 }
 
-if (isset($_FILES['uploadBill'])) {
+/*if (isset($_FILES['uploadBill'])) {
     // define the path to the upload folder
     $destinationBill = 'uploads/bill/';
     try {
@@ -134,7 +134,7 @@ if (isset($_FILES['uploadBill'])) {
         } else {
             $uploadsBill="";
         }
-}
+} */
 ?>
 <!--//创建注册信息-->
                 <table border="1" cellpadding="3">
@@ -279,29 +279,29 @@ if (isset($_FILES['uploadBill'])) {
                                 </td>
                               </tr>
                             <?php } ?>
-                <tr>
+   <!--             <tr>
                    <td><font color="red"> *</font> 注册费： </td> 
                    <td> 
-                       <?php if ($meetingfee==""){
+                       <?php /*if ($meetingfee==""){
                               $testy=true;
                               echo '<font color="red">请输入缴费信息</font>';}
                               else {
                               echo $meetingfee;
-                              }
+                              } */
                         ?>
                   </td>
-                 </tr>
-                 <tr>
+                 </tr>                  <tr>
                    <td> 票据信息： </td> 
                    <td> 
-                       <?php if ($uploadBill1==""){
+                       <?php /*if ($uploadBill1==""){
                               echo '无票据信息';}
                               else {
                               echo "<a href=$uploadsBill>下载</a>"; 
-                              }
+                              } */
                         ?>
                   </td>
-                </tr>
+                </tr> -->
+
                 
                  <tr>
                    <td>备注信息： </td> 
@@ -335,9 +335,9 @@ if (isset($_FILES['uploadBill'])) {
            $errord[]=$conn->connect_errno;
         } 
         if (!empty($_GET['user_id'])&& $resultNum>0){ 
-           $sql= "update regist set name = ?, gender = ?, unit = ?, title = ?, telephone = ?, email = ?, arrivalTime = ?, departureTime = ?, lecture = ?, uploadFile = ?, hotel = ?, meetingfee = ?, uploadBill = ?, remark = ?  where id = ? ";
+           $sql= "update regist set name = ?, gender = ?, unit = ?, title = ?, telephone = ?, email = ?, arrivalTime = ?, departureTime = ?, lecture = ?, uploadFile = ?, hotel = ?, remark = ?  where id = ? ";
     if ($stmt->prepare($sql)) {
-        $stmt->bind_param("ssssssssssssssi", $name, $gender, $unit, $title, $telephone, $email, $arrivalTime, $departureTime, $lecture, $uploadsFile,  $hotel, $meetingfee, $uploadsBill, $remark, $_GET['user_id']);
+        $stmt->bind_param("ssssssssssssi", $name, $gender, $unit, $title, $telephone, $email, $arrivalTime, $departureTime, $lecture, $uploadsFile,  $hotel, $remark, $_GET['user_id']);
         $stmt->execute();
         if ($stmt->affected_rows>0) {
             $ok=true;
@@ -347,9 +347,9 @@ if (isset($_FILES['uploadBill'])) {
      }    
         $stmt->close();
    } elseif($resultNum==0){
-           $sql= "insert into regist (name, gender, unit, title, telephone, email, arrivalTime, departureTime, lecture, uploadFile, hotel, meetingfee, uploadBill, remark) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+           $sql= "insert into regist (name, gender, unit, title, telephone, email, arrivalTime, departureTime, lecture, uploadFile, hotel, remark) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
     if ($stmt->prepare($sql)) {
-        $stmt->bind_param("ssssssssssssss", $name, $gender, $unit, $title, $telephone, $email, $arrivalTime, $departureTime, $lecture, $uploadsFile,  $hotel, $meetingfee, $uploadsBill, $remark);
+        $stmt->bind_param("ssssssssssss", $name, $gender, $unit, $title, $telephone, $email, $arrivalTime, $departureTime, $lecture, $uploadsFile,  $hotel, $remark);
         $stmt->execute();
         if ($stmt->affected_rows>0) {
             $ok=true;
