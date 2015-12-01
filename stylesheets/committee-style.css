@@ -41,6 +41,14 @@ Released   : 20120210
 	border-top: 0;
 }
 
+#page table{
+font-size: 110%;
+}
+
+#page tr{
+height: 35px;
+}
+
 #page-bottom {
 	position: relative;
 	margin: 0;
