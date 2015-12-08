@@ -26,7 +26,7 @@ Released   : 20120210
        <?php include('./includes/head.inc.php');?>
 	<div id="page">
 		<div id="content">
-                        <h4> 顾问委员会：</h4>
+                        <h4> 顾问委员会：<font size="3pt">(按姓氏拼音顺序) </font></h4>                         
                         <table>
                         <tr>
 			<td>1  </td>  <td> 高锦岳教授  </td><td> 吉林大学 </td>
@@ -66,7 +66,7 @@ Released   : 20120210
                         </tr>
                         </table>  
                         </br>
-     			<h4>学术委员会:</h4>
+     			<h4>学术委员会：<font size="3pt"> (按姓氏拼音顺序) </font></h4>
 			<table>
 			<tr>
 			<td>1 </td>  <td> 陈平形教授   </td>  <td> 国防科技大学</td> 
@@ -154,16 +154,15 @@ Released   : 20120210
 			</tr>
 			</table>
 			</br>
-                         <h4>工作委员会</h4>
+                          
+                         <h4>大会秘书长：<font size="4pt">周正威</font></h4> 
+                         <h4>工作委员会：</h4>
                          <table>
                          <tr> 
-                         <td> <strong>主 &nbsp; 任</strong>: </td> <td> 张天才、 张卫平 </td>  
+                         <td> <strong>主 &nbsp; 任</strong>: &nbsp; </td> <td> 薛德胜、罗洪刚 </td> 
                          </tr> 
                          <tr> 
-                         <td> <strong>副主任</strong>: &nbsp; </td> <td> 薛德胜、罗洪刚 </td> 
-                         </tr> 
-                         <tr> 
-                         <td> <strong>委 &nbsp; 员</strong>: </td> <td> 周正威、安钧鸿、谭磊、田永辉</td>
+                         <td> <strong>委 &nbsp; 员</strong>: </td> <td> 安钧鸿、谭磊、田永辉</td>
                          </tr> 
                          <tr> 
                          <td> <strong>秘  &nbsp; 书</strong>: </td> <td> 苏振博、陈冲、马超</td>

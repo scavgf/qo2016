@@ -60,6 +60,7 @@ Released   : 20120210
 				    </p>
 				    <p>
 				        <input name="login" type="submit" value="登 陆"> &nbsp;&nbsp;&nbsp; <font color="red">*</font> 新用户请 <a href="./register_login.php">注 册</a>
+                                   <p> 忘记密码，请<a href="contactus.php">联系我们</a><p>
 				       <!-- <button type="button"  onclick="location.href='./register_login.php';"> 注 册 </button> <font color="red">*</font> 新用户请注册 -->
 				    </p>
 				</form>

@@ -1,6 +1,7 @@
 <div id="nav">
 	<ul class="disc">
-		<li class="first"><a href="committee.php">委员会</a></li>
+		<li class="first"><a href="/documents/first-notification.docx">第一轮通知</a></li>
+		<li><a href="committee.php">委员会</a></li>
 		<li><a href="#">邀请报告</a></li>
 		<li><a href="schedule.php">会议日程</a></li>
 		<li><a href="meetingfee.php">注册费</a></li>
